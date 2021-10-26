@@ -1,481 +1,553 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles/style.css">
-    </head>
-    <body>
-        <div class="promo">
-            <div class="header">
-                <div class="header-content">
-                    <img src="logo/bitdegree-logo-white.svg" class="logo" id="beta-logo-header">
+  <head>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="promo">
+      <div class="header">
+        <div class="header-content">
+          <img
+            class="header-option-button-icon"
+            id="hamburger-menu-button"
+            src="icon/hamburgerMenuIcon.png"
+          />
+          <img
+            src="logo/bitdegree-logo-white.svg"
+            class="logo"
+            id="beta-logo-header"
+          />
 
-                    <div class="category-filter">
-                        <p class="category-filter-text">Courses</p>
-                        <img src="icon/dropDown.png" class="category-filter-icon">
-                    </div>
+          <div class="category-filter" id="category-filter">
+            <p class="category-filter-text">Courses</p>
+            <img src="icon/dropDown.png" class="category-filter-icon" />
+          </div>
 
-                    <div class="search-area">
-                        <img src="icon/searchIconGray.png" class="header-option-button-icon">
-                        <textarea class="search-area-text-area" placeholder="Search courses"></textarea>
-                    </div>
-                </div>
-                
-                <div class="header-content-right">
-                    <div class="header-option-button">
-                        <img class="header-option-button-icon" src="icon/shoppingIconWhite.png">
-                    </div>
-                    
-                    <div class="header-option-button">
-                        <p class="header-option-text">Become instructor</p>
-                    </div>
-                    
-                    <div class="header-option-button">
-                        <p class="header-option-text">Login</p>
-                    </div>
-                    
-                    <div class="sign-up-button">
-                        <p class="header-option-text">Sign up FREE</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="main-content">
-                <p class="main-content-title">Discover the Top Industries to Conquer</p>
-                                
-                <p class="main-content-text">Explore the most rewarding career choices and get the right training</p>
-                                
-                <div class="main-content-course-category">
-                    <p class="main-content-text">Popular</p>
-                    
-                    <div class="main-content-course-category-item">
-                        <p class="main-content-small-text">AWS Cloud</p>
-                    </div>
-                    
-                    <div class="main-content-course-category-item">
-                        <p class="main-content-small-text">Game Development</p>
-                    </div>
-                    
-                    <div class="main-content-course-category-item">
-                        <p class="main-content-small-text">Data Science</p>
-                    </div>
-                    
-                    <div class="main-content-course-category-item">
-                        <p class="main-content-small-text">Web Development</p>
-                    </div>
-                </div>
-            </div>
+          <div class="search-area" id="course-search-area">
+            <img
+              src="icon/searchIconGray.png"
+              class="header-option-button-icon"
+            />
+            <textarea
+              class="search-area-text-area"
+              placeholder="Search courses"
+            ></textarea>
+          </div>
         </div>
-        
-        <div class="page-content">
-            <div class="sponsors-list">
-                <img class="item" src="logo/logo-elearning-inside.png">
 
-                <img class="item" src="logo/logo-forbes.png">
+        <div class="header-content-right">
+          <div class="header-option-button">
+            <img
+                id="shopping-icon"
+                class="header-option-button-icon"
+                src="icon/shoppingIconWhite.png"
+            />
 
-                <img class="item" src="logo/logo-markets-insider.png">
+            <img
+                id="search-icon"
+                class="header-option-button-icon"
+                src="icon/searchIconWhite.png"
+            />
+          </div>
 
-                <img class="item" src="logo/logo-observer.png">
+          <div class="header-option-button" id="become-instructor-button">
+            <p class="header-option-text">Become instructor</p>
+          </div>
 
-                <img class="item" src="logo/logo-tnw.png">
+          <div class="header-option-button" id="login-button">
+            <p class="header-option-text">Login</p>
+          </div>
 
-                <img class="item" src="logo/logo-zdnet.png">
-            </div>
+          <div class="sign-up-button" id="sign-up-button">
+            <p class="header-option-text">Sign up FREE</p>
+          </div>
         </div>
-        
-        <div class="page-content">
-            <div class="career-quiz">
-                <p class="title">Don't know where to start?</p>
-                
-                <p class="text">Get a personalized list of courses by completing a free career quiz</p>
-                
-                <button class="button">Let's get into this</button>
-            </div>
+      </div>
+
+      <div class="main-content">
+        <p class="main-content-title">Discover the Top Industries to Conquer</p>
+
+        <p class="main-content-text">
+          Explore the most rewarding career choices and get the right training
+        </p>
+
+        <div class="main-content-course-category">
+          <p class="main-content-text">Popular</p>
+
+          <div class="main-content-course-category-item">
+            <p class="main-content-small-text">AWS Cloud</p>
+          </div>
+
+          <div class="main-content-course-category-item">
+            <p class="main-content-small-text">Game Development</p>
+          </div>
+
+          <div class="main-content-course-category-item">
+            <p class="main-content-small-text">Data Science</p>
+          </div>
+
+          <div class="main-content-course-category-item">
+            <p class="main-content-small-text">Web Development</p>
+          </div>
         </div>
-        
-        <div class="page-content">
-            <p class="page-content-title">Hundreds of online courses that scaled many careers worldwide</p>
-            
-            <div class="hint-courses-categories">
-                <p class="category">Blockchain</p>
-                <p class="category">Business</p>
-                <p class="category">Coding and programming</p>
-                <p class="category">Data Science</p>
-                <p class="category">Design</p>
-                <p class="category">IT Security and Software</p>
-                <p class="category">Marketing</p>
-                <p class="category">Personal Development</p>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="sponsors-list">
+        <img class="item" src="logo/logo-elearning-inside.png" />
+
+        <img class="item" src="logo/logo-forbes.png" />
+
+        <img class="item" src="logo/logo-markets-insider.png" />
+
+        <img class="item" src="logo/logo-observer.png" />
+
+        <img class="item" src="logo/logo-tnw.png" />
+
+        <img class="item" src="logo/logo-zdnet.png" />
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="career-quiz">
+        <p class="title">Don't know where to start?</p>
+
+        <p class="text">
+          Get a personalized list of courses by completing a free career quiz
+        </p>
+
+        <button class="button">Let's get into this</button>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <p class="page-content-title">
+        Hundreds of online courses that scaled many careers worldwide
+      </p>
+
+      <div class="hint-courses-categories">
+        <p class="category">Blockchain</p>
+        <p class="category">Business</p>
+        <p class="category">Coding and programming</p>
+        <p class="category">Data Science</p>
+        <p class="category">Design</p>
+        <p class="category">IT Security and Software</p>
+        <p class="category">Marketing</p>
+        <p class="category">Personal Development</p>
+      </div>
+
+      <div class="hint-courses">
+        <div class="hint-courses-card">
+          <img class="image" src="images/salesforce-admin-training.jpg" />
+
+          <div class="description">
+            <div class="left">
+              <p class="instructor-name">Abdulaziz Arslanyilmaz</p>
             </div>
-            
-            <div class="hint-courses">
-                <div class="hint-courses-card">
-                    <img class="image" src="images/salesforce-admin-training.jpg">
 
-                    <div class="description">
-                        <div class="left">
-                            <p class="instructor-name">Abdulaziz Arslanyilmaz</p>
-                        </div>
-
-                        <div class="right">
-                            <img class="rating-star" src="icon/starIcon.png">
-                            <p class="rating">5.0</p>
-                        </div>
-                    </div>
-
-                    <p class="course-name">Salesforce Admin Training with practice tasks</p>
-
-                    <div class="course-level">
-                        <p>Beginner</p>
-                    </div>
-
-                    <div class="course-price">$9.99</div>
-                </div>
-                
-                <div class="hint-courses-card">
-                    <img class="image" src="images/ipv6-addressing-straight-to-the-point.jpg">
-
-                    <div class="description">
-                        <div class="left">
-                            <p class="instructor-name">Lazaro Diaz</p>
-                        </div>
-
-                        <div class="right">
-                            <img class="rating-star" src="icon/starIcon.png">
-                            <p class="rating">5.0</p>
-                        </div>
-                    </div>
-
-                    <p class="course-name">IPv6 Addressing: Straight-To-The-Point</p>
-
-                    <div class="course-level">
-                        <p>Beginner</p>
-                    </div>
-
-                    <div class="course-price">$19.99</div>
-                </div>
-                
-                <div class="hint-courses-card">
-                    <img class="image" src="images/launch-your-website-with-github-pages.jpg">
-
-                    <div class="description">
-                        <div class="left">
-                            <p class="instructor-name">Robert Gilliland</p>
-                        </div>
-
-                        <div class="right">
-                            <img class="rating-star" src="icon/starIcon.png">
-                            <p class="rating">5.0</p>
-                        </div>
-                    </div>
-
-                    <p class="course-name">Launch your Website with GitHub pages</p>
-
-                    <div class="course-level">
-                        <p>Beginner</p>
-                    </div>
-
-                    <div class="course-price">$9.99</div>
-                </div>
-                
-                <div class="hint-courses-card">
-                    <img class="image" src="images/financial-model-building-made-easy-a-to-z-financial-model.png">
-
-                    <div class="description">
-                        <div class="left">
-                            <p class="instructor-name">Chris Benjamin</p>
-                        </div>
-
-                        <div class="right">
-                            <img class="rating-star" src="icon/starIcon.png">
-                            <p class="rating">5.0</p>
-                        </div>
-                    </div>
-
-                    <p class="course-name">Excel financial modeling Course: Build a financial model with Excel Easy</p>
-
-                    <div class="course-level">
-                        <p>Beginner</p>
-                    </div>
-
-                    <div class="course-price">$9.99</div>
-                </div>
+            <div class="right">
+              <img class="rating-star" src="icon/starIcon.png" />
+              <p class="rating">5.0</p>
             </div>
-        </div>
-        
-        <div class="page-content">
-            <button class="page-content-big-button">Sign up now</button>
-        </div>
-        
-        <div class="page-content">
-            <p class="page-content-title">Learning Paths to reach your career objectives</p>
-            
-            <p class="page-content-subtitle">Follow the steps, complete online courses and learn everything you need to prepare for the career of your dreams!</p>
-            
-            <div class="learning-path">
-                <div class="card">
-                    <img class="back-image" src="images/unity.jpg">
-                    <div class="front-content">
-                        <p class="small-text">Become a</p>
-                        <p class="big-text">Game Developer with Unity</p>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <img class="back-image" src="images/ios.jpg">
-                    <div class="front-content">
-                        <p class="small-text">Become an</p>
-                        <p class="big-text">iOS App Developer</p>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <img class="back-image" src="images/android.jpg">
-                    <div class="front-content">
-                        <p class="small-text">Become a</p>
-                        <p class="big-text">Android App Developer</p>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <img class="back-image" src="images/game-design.jpg">
-                    <div class="front-content">
-                        <p class="small-text">Become a</p>
-                        <p class="big-text">Game Designer</p>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <img class="back-image" src="images/web.jpg">
-                    <div class="front-content">
-                        <p class="small-text">Become a</p>
-                        <p class="big-text">Web Developer</p>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <img class="back-image" src="images/business.jpg">
-                    <div class="front-content">
-                        <p class="small-text">Become a</p>
-                        <p class="big-text">Online Business Master</p>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <img class="back-image" src="images/digital-marketing.jpg">
-                    <div class="front-content">
-                        <p class="small-text">Become a</p>
-                        <p class="big-text">Digital Marketing Guru</p>
-                    </div>
-                </div>
-            </div>
-            
-            <button class="page-content-big-button">Learn more</button>
-        </div>
-        
-        <div class="page-content">
-            <p class="page-content-title">Micro-scholarships</p>
-            <p class="page-content-subtitle-medium">"Just like today’s job industry, online education is more skills-oriented." <strong>BitDegree micro-scholarships</strong> "bring together learners who need a financial assist and global education donors who seek transparency. Yes, we can help each other!"</p>
-            
-            <div class="support-list">
-                <div class="card">
-                    <img class="image" src="images/student.jpg">
-                    
-                    <p class="title">Apply for a scholarship</p>
-                    <p class="content">You can earn financial support once you complete the course in time and get a blockchain certificate.</p>
-                    
-                    <button class="button">Apply now</button>
-                </div>
-                
-                <div class="card">
-                    <img class="image" src="images/sponsor.jpg">
-                    
-                    <p class="title">Become a sponsor</p>
-                    <p class="content">Read applicants’ stories and choose to fund those in need. See where your money goes and when students fulfill their dues.</p>
-                    
-                    <button class="button">Support</button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="page-content">
-            <p class="page-content-title">Student community feedback</p>
-            
-            <div class="feedback-list">
-                <div class="card">
-                    <div class="star-row">
-                        <img class="star-img" src="icon/starIcon.png">
-                        <img class="star-img" src="icon/starIcon.png">
-                        <img class="star-img" src="icon/starIcon.png">
-                        <img class="star-img" src="icon/starIcon.png">
-                        <img class="star-img" src="icon/starIcon.png">
-                    </div>
-                    
-                    <p class="feedback-content">“BitDegree is the new world for all people. The Lessons are very easy to learn. Thanks to BitDegree team.”</p>
-                    
-                    <div class="separator"></div>
-                    
-                    <div class="feedback-writer-info">
-                        <div class="left">
-                            <img class="avatar" src="images/android.jpg">
-                        </div>
-                        
-                        <div class="right">
-                            <p class="commentor-name">Sơn Lê</p>
-                            <p class="commentor-location">Vietnam</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="star-row">
-                        <img class="star-img" src="icon/starIcon.png">
-                        <img class="star-img" src="icon/starIcon.png">
-                        <img class="star-img" src="icon/starIcon.png">
-                        <img class="star-img" src="icon/starIcon.png">
-                        <img class="star-img" src="icon/starIcon.png">
-                    </div>
-                    
-                    <p class="feedback-content">“It’s so simple, yet the rewards wonderful. I am a novice in programming, but thanks to BitDegree, no more.”</p>
-                    
-                    <div class="separator"></div>
-                    
-                    <div class="feedback-writer-info">
-                        <div class="left">
-                            <img class="avatar" src="images/android.jpg">
-                        </div>
-                        
-                        <div class="right">
-                            <p class="commentor-name">Раул Васт</p>
-                            <p class="commentor-location">Mexico</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="star-row">
-                        <img class="star-img" src="icon/starIcon.png">
-                        <img class="star-img" src="icon/starIcon.png">
-                        <img class="star-img" src="icon/starIcon.png">
-                        <img class="star-img" src="icon/starIcon.png">
-                        <img class="star-img" src="icon/starIcon.png">
-                    </div>
-                    
-                    <p class="feedback-content">“I have started to learn Solidity programming by Bitdegree SpaceDoggos course. Excellent.”</p>
-                    
-                    <div class="separator"></div>
-                    
-                    <div class="feedback-writer-info">
-                        <div class="left">
-                            <img class="avatar" src="images/android.jpg">
-                        </div>
-                        
-                        <div class="right">
-                            <p class="commentor-name">Yunus Seyhan Dede</p>
-                            <p class="commentor-location">Turkey</p>
-                        </div>
-                    </div>
-                </div>  
-            </div>
-        </div>
-        
-        <div class="career-quiz-2">
-            <p class="title">Get a personalized list of courses by completing a free career quiz</p>
-            
-            <button class="button">Complete quiz</button>
-        </div>
-        
-        <div class="footer">
-            <div class="footer-column">
-                <div class="footer-column-item">
-                    <p class="footer-column-category">COURSES</p>
-                    <ul class="footer-column-list">
-                        <li class="text">Courses</li>
-                        <li class="text">Learning Paths</li>
-                        <li class="text">Guides</li>
-                        <li class="text">Code theory</li>
-                        <li class="text">Tutorials</li>
-                        <li class="text">Free Certifications Online</li>
-                        <li class="text">Apply for a Scholarship</li>
-                        <li class="text">Learn and get hired</li>
-                    </ul>
-                </div>
+          </div>
 
-                <div class="footer-column-item">
-                    <p class="footer-column-category">COMPANY</p>
-                    <ul class="footer-column-list">
-                        <li class="text">About us</li>
-                        <li class="text">EU Projects</li>
-                        <li class="text">Hiring</li>
-                        <li class="text">White paper</li>
-                        <li class="text">Blog</li>
-                        <li class="text">BitDegree Reviews</li>
-                        <li class="text">FAQ</li>
-                        <li class="text">Press Releases</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column-item">
-                    <p class="footer-column-category">LEGAL</p>
-                    <ul class="footer-column-list">
-                        <li class="text">Policies and Legal Documents</li>
-                        <li class="text">Privacy Policy</li>
-                        <li class="text"></li>
-                        <li class="text">Cookie Policy</li>
-                        <li class="text">Money back guarantee and Refund policy</li>
-                        <li class="text">Terms of Service</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column-item">
-                    <p class="footer-column-category">INSTRUCTORS AND PARTNERS</p>
-                    <ul class="footer-column-list">
-                        <li class="text">Learning Management System</li>
-                        <li class="text">Become an Instructor</li>
-                        <li class="text">Become Our Partner</li>
-                        <li class="text">Hire Talent With Us</li>
-                        <li class="text">Earn With Us</li>
-                        <li class="text">TLearning platforms' reviews</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column-item">
-                    <p class="footer-column-category">LANGUAGE</p>
-                    <div class="footer-language-chooser">
-                        <p class="category-filter-text">English</p>
-                        <img src="icon/dropDown.png" class="category-filter-icon">
-                    </div>
-                    
-                    <p class="footer-column-category">FOLLOW US</p>
-                    <div class="follow-us">
-                        <img class="icon" src="logo/facebookLogo.png">
-                        
-                        <img class="icon" src="logo/instaLogo.png">
-                        
-                        <img class="icon" src="logo/twitterLogo.png">
-                        
-                        <img class="icon" src="logo/linkedInLogo.png">
-                        
-                        <img class="icon" src="logo/githubLogo.png">
-                        
-                        <img class="icon" src="logo/mediumLogo.png">
-                        
-                        <img class="icon" src="logo/youtubeLogo.png">
-                        
-                        <img class="icon" src="logo/reddit-logo.png">
-                    </div>
-                    
-                    <div class="follow-us-logo">
-                        <img class="follow-us-logo-item" src="logo/esfivp.png">
-                        
-                        <img class="follow-us-logo-item" src="logo/wsa-png.png">
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-credit">
-                <img class="footer-credit-image" src="logo/bitdegree-logo-white.svg">
-                
-                <p class="footer-credit-copyright">Copyright © 2021 BitDegree.org</p>
-            </div>
+          <p class="course-name">
+            Salesforce Admin Training with practice tasks
+          </p>
+
+          <div class="course-level">
+            <p>Beginner</p>
+          </div>
+
+          <div class="course-price">$9.99</div>
         </div>
-    </body>
+
+        <div class="hint-courses-card">
+          <img
+            class="image"
+            src="images/ipv6-addressing-straight-to-the-point.jpg"
+          />
+
+          <div class="description">
+            <div class="left">
+              <p class="instructor-name">Lazaro Diaz</p>
+            </div>
+
+            <div class="right">
+              <img class="rating-star" src="icon/starIcon.png" />
+              <p class="rating">5.0</p>
+            </div>
+          </div>
+
+          <p class="course-name">IPv6 Addressing: Straight-To-The-Point</p>
+
+          <div class="course-level">
+            <p>Beginner</p>
+          </div>
+
+          <div class="course-price">$19.99</div>
+        </div>
+
+        <div class="hint-courses-card">
+          <img
+            class="image"
+            src="images/launch-your-website-with-github-pages.jpg"
+          />
+
+          <div class="description">
+            <div class="left">
+              <p class="instructor-name">Robert Gilliland</p>
+            </div>
+
+            <div class="right">
+              <img class="rating-star" src="icon/starIcon.png" />
+              <p class="rating">5.0</p>
+            </div>
+          </div>
+
+          <p class="course-name">Launch your Website with GitHub pages</p>
+
+          <div class="course-level">
+            <p>Beginner</p>
+          </div>
+
+          <div class="course-price">$9.99</div>
+        </div>
+
+        <div class="hint-courses-card">
+          <img
+            class="image"
+            src="images/financial-model-building-made-easy-a-to-z-financial-model.png"
+          />
+
+          <div class="description">
+            <div class="left">
+              <p class="instructor-name">Chris Benjamin</p>
+            </div>
+
+            <div class="right">
+              <img class="rating-star" src="icon/starIcon.png" />
+              <p class="rating">5.0</p>
+            </div>
+          </div>
+
+          <p class="course-name">
+            Excel financial modeling Course: Build a financial model with Excel
+            Easy
+          </p>
+
+          <div class="course-level">
+            <p>Beginner</p>
+          </div>
+
+          <div class="course-price">$9.99</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <button class="page-content-big-button">Sign up now</button>
+    </div>
+
+    <div class="page-content">
+      <p class="page-content-title">
+        Learning Paths to reach your career objectives
+      </p>
+
+      <p class="page-content-subtitle">
+        Follow the steps, complete online courses and learn everything you need
+        to prepare for the career of your dreams!
+      </p>
+
+      <div class="learning-path">
+        <div class="card">
+          <img class="back-image" src="images/unity.jpg" />
+          <div class="front-content">
+            <p class="small-text">Become a</p>
+            <p class="big-text">Game Developer with Unity</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="back-image" src="images/ios.jpg" />
+          <div class="front-content">
+            <p class="small-text">Become an</p>
+            <p class="big-text">iOS App Developer</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="back-image" src="images/android.jpg" />
+          <div class="front-content">
+            <p class="small-text">Become a</p>
+            <p class="big-text">Android App Developer</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="back-image" src="images/game-design.jpg" />
+          <div class="front-content">
+            <p class="small-text">Become a</p>
+            <p class="big-text">Game Designer</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="back-image" src="images/web.jpg" />
+          <div class="front-content">
+            <p class="small-text">Become a</p>
+            <p class="big-text">Web Developer</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="back-image" src="images/business.jpg" />
+          <div class="front-content">
+            <p class="small-text">Become a</p>
+            <p class="big-text">Online Business Master</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="back-image" src="images/digital-marketing.jpg" />
+          <div class="front-content">
+            <p class="small-text">Become a</p>
+            <p class="big-text">Digital Marketing Guru</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="page-content-big-button">Learn more</button>
+    </div>
+
+    <div class="page-content">
+      <p class="page-content-title">Micro-scholarships</p>
+      <p class="page-content-subtitle-medium">
+        "Just like today’s job industry, online education is more
+        skills-oriented." <strong>BitDegree micro-scholarships</strong> "bring
+        together learners who need a financial assist and global education
+        donors who seek transparency. Yes, we can help each other!"
+      </p>
+
+      <div class="support-list">
+        <div class="card">
+          <img class="image" src="images/student.jpg" />
+
+          <p class="title">Apply for a scholarship</p>
+          <p class="content">
+            You can earn financial support once you complete the course in time
+            and get a blockchain certificate.
+          </p>
+
+          <button class="button">Apply now</button>
+        </div>
+
+        <div class="card">
+          <img class="image" src="images/sponsor.jpg" />
+
+          <p class="title">Become a sponsor</p>
+          <p class="content">
+            Read applicants’ stories and choose to fund those in need. See where
+            your money goes and when students fulfill their dues.
+          </p>
+
+          <button class="button">Support</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <p class="page-content-title">Student community feedback</p>
+
+      <div class="feedback-list">
+        <div class="card">
+          <div class="star-row">
+            <img class="star-img" src="icon/starIcon.png" />
+            <img class="star-img" src="icon/starIcon.png" />
+            <img class="star-img" src="icon/starIcon.png" />
+            <img class="star-img" src="icon/starIcon.png" />
+            <img class="star-img" src="icon/starIcon.png" />
+          </div>
+
+          <p class="feedback-content">
+            “BitDegree is the new world for all people. The Lessons are very
+            easy to learn. Thanks to BitDegree team.”
+          </p>
+
+          <div class="separator"></div>
+
+          <div class="feedback-writer-info">
+            <div class="left">
+              <img class="avatar" src="images/android.jpg" />
+            </div>
+
+            <div class="right">
+              <p class="commentor-name">Sơn Lê</p>
+              <p class="commentor-location">Vietnam</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="star-row">
+            <img class="star-img" src="icon/starIcon.png" />
+            <img class="star-img" src="icon/starIcon.png" />
+            <img class="star-img" src="icon/starIcon.png" />
+            <img class="star-img" src="icon/starIcon.png" />
+            <img class="star-img" src="icon/starIcon.png" />
+          </div>
+
+          <p class="feedback-content">
+            “It’s so simple, yet the rewards wonderful. I am a novice in
+            programming, but thanks to BitDegree, no more.”
+          </p>
+
+          <div class="separator"></div>
+
+          <div class="feedback-writer-info">
+            <div class="left">
+              <img class="avatar" src="images/android.jpg" />
+            </div>
+
+            <div class="right">
+              <p class="commentor-name">Раул Васт</p>
+              <p class="commentor-location">Mexico</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="star-row">
+            <img class="star-img" src="icon/starIcon.png" />
+            <img class="star-img" src="icon/starIcon.png" />
+            <img class="star-img" src="icon/starIcon.png" />
+            <img class="star-img" src="icon/starIcon.png" />
+            <img class="star-img" src="icon/starIcon.png" />
+          </div>
+
+          <p class="feedback-content">
+            “I have started to learn Solidity programming by Bitdegree
+            SpaceDoggos course. Excellent.”
+          </p>
+
+          <div class="separator"></div>
+
+          <div class="feedback-writer-info">
+            <div class="left">
+              <img class="avatar" src="images/android.jpg" />
+            </div>
+
+            <div class="right">
+              <p class="commentor-name">Yunus Seyhan Dede</p>
+              <p class="commentor-location">Turkey</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="career-quiz-2">
+      <p class="title">
+        Get a personalized list of courses by completing a free career quiz
+      </p>
+
+      <button class="button">Complete quiz</button>
+    </div>
+
+    <div class="footer">
+      <div class="footer-links">
+        <div class="footer-column-item">
+          <p class="footer-column-category">COURSES</p>
+          <ul class="footer-column-list">
+            <li class="text">Courses</li>
+            <li class="text">Learning Paths</li>
+            <li class="text">Guides</li>
+            <li class="text">Code theory</li>
+            <li class="text">Tutorials</li>
+            <li class="text">Free Certifications Online</li>
+            <li class="text">Apply for a Scholarship</li>
+            <li class="text">Learn and get hired</li>
+          </ul>
+        </div>
+
+        <div class="footer-column-item">
+          <p class="footer-column-category">COMPANY</p>
+          <ul class="footer-column-list">
+            <li class="text">About us</li>
+            <li class="text">EU Projects</li>
+            <li class="text">Hiring</li>
+            <li class="text">White paper</li>
+            <li class="text">Blog</li>
+            <li class="text">BitDegree Reviews</li>
+            <li class="text">FAQ</li>
+            <li class="text">Press Releases</li>
+          </ul>
+        </div>
+
+        <div class="footer-column-item">
+          <p class="footer-column-category">LEGAL</p>
+          <ul class="footer-column-list">
+            <li class="text">Policies and Legal Documents</li>
+            <li class="text">Privacy Policy</li>
+            <li class="text"></li>
+            <li class="text">Cookie Policy</li>
+            <li class="text">Money back guarantee and Refund policy</li>
+            <li class="text">Terms of Service</li>
+          </ul>
+        </div>
+
+        <div class="footer-column-item">
+          <p class="footer-column-category">INSTRUCTORS AND PARTNERS</p>
+          <ul class="footer-column-list">
+            <li class="text">Learning Management System</li>
+            <li class="text">Become an Instructor</li>
+            <li class="text">Become Our Partner</li>
+            <li class="text">Hire Talent With Us</li>
+            <li class="text">Earn With Us</li>
+            <li class="text">TLearning platforms' reviews</li>
+          </ul>
+        </div>
+
+        <div class="footer-column-item">
+          <p class="footer-column-category">LANGUAGE</p>
+          <div class="footer-language-chooser">
+            <p class="category-filter-text">English</p>
+            <img src="icon/dropDown.png" class="category-filter-icon" />
+          </div>
+
+          <p class="footer-column-category">FOLLOW US</p>
+          <div class="follow-us">
+            <img class="icon" src="logo/facebookLogo.png" />
+
+            <img class="icon" src="logo/instaLogo.png" />
+
+            <img class="icon" src="logo/twitterLogo.png" />
+
+            <img class="icon" src="logo/linkedInLogo.png" />
+
+            <img class="icon" src="logo/githubLogo.png" />
+
+            <img class="icon" src="logo/mediumLogo.png" />
+
+            <img class="icon" src="logo/youtubeLogo.png" />
+
+            <img class="icon" src="logo/reddit-logo.png" />
+          </div>
+
+          <div class="follow-us-logo">
+            <img class="follow-us-logo-item" src="logo/esfivp.png" />
+
+            <img class="follow-us-logo-item" src="logo/wsa-png.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-credit">
+        <img class="footer-credit-image" src="logo/bitdegree-logo-white.svg" />
+
+        <p class="footer-credit-copyright">Copyright © 2021 BitDegree.org</p>
+      </div>
+    </div>
+  </body>
 </html>

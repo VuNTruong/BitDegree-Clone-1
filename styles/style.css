@@ -23,7 +23,7 @@ body { margin:0; padding: 0; } /* Remove body margins */
 }
 
 .header-content {
-    width: 50%;
+/*    width: 50%;*/
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -32,14 +32,14 @@ body { margin:0; padding: 0; } /* Remove body margins */
 .header-content-right {
     background-color: transparent;
     display: flex;
-    width: 30%;
+/*    width: 30%;*/
     justify-content: flex-end;
     align-items: center;
 }
 
 .logo {
     margin-right: 20px;
-    height: 50px;
+    height: 36px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -179,7 +179,7 @@ body { margin:0; padding: 0; } /* Remove body margins */
 .main-content-course-category {
     display: flex;
     align-items: center;
-    justify-content: center;
+/*    justify-content: center;*/
     margin-left: 25%;
     width: 50%;
     flex-flow: wrap;
@@ -547,7 +547,7 @@ body { margin:0; padding: 0; } /* Remove body margins */
 }
 
 .footer-column-item {
-    margin: 5px;
+/*    margin: 5px;*/
 }
 
 .footer-column-list {
@@ -770,8 +770,10 @@ body { margin:0; padding: 0; } /* Remove body margins */
 }
 
 .support-list {
+    width: 100%;
     display: flex;
     flex-flow: wrap;
+    justify-content: center;
 }
 
 .support-list .card {
@@ -903,4 +905,55 @@ body { margin:0; padding: 0; } /* Remove body margins */
     margin-top: 3px;
     margin-bottom: 0;
     overflow: hidden;
+}
+
+.footer-links {
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    #hamburger-menu-button {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #search-icon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #category-filter {
+        display: none;
+    }
+    
+    #course-search-area {
+        display: none;
+    }
+    
+    #become-instructor-button {
+        display: none;
+    }
+    
+    #login-button {
+        display: none;
+    }
+    
+    #sign-up-button {
+        display: none;
+    }
+    
+    .promo {
+        background: url("../banner/banner-mobile.png");
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .footer-links {
+        grid-template-columns: auto auto;
+    }
 }
