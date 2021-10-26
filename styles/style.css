@@ -399,9 +399,9 @@ body { margin:0; padding: 0; } /* Remove body margins */
 .page-content {
     justify-content: center;
     justify-items: center;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     flex-flow: wrap;
     display: flex;
     margin-top: 20px;
@@ -597,4 +597,107 @@ body { margin:0; padding: 0; } /* Remove body margins */
 .follow-us-logo-item {
     height: 35px;
     margin: 10px;
+}
+
+.hint-courses-title {
+    margin-top: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.hint-courses {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hint-courses-card {
+    width: 30%;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: darkgray;
+    margin: 10px;
+}
+
+.hint-courses-card .image {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hint-courses-card .description {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+    margin-bottom: -20px;
+    justify-content: space-between;
+}
+
+.hint-courses-card .description .left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hint-courses-card .description .left .instructor-name {
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    color: darkgray;
+}
+
+.hint-courses-card .description .right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hint-courses-card .description .right .rating-star {
+    height: 20px;
+}
+
+.hint-courses-card .description .right .rating {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.hint-courses-card .course-name {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.hint-courses-card .course-level {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-color: darkgray;
+    border-width: 1px;
+    border-radius: 2px;
+    margin-left: 5%;
+    font-size: 15px;
+    width: 80px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.hint-courses-card .course-price {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
