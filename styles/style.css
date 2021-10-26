@@ -310,7 +310,7 @@ body { margin:0; padding: 0; } /* Remove body margins */
 .hamburger-menu {
     z-index: 10;
     background-color: white;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -397,15 +397,59 @@ body { margin:0; padding: 0; } /* Remove body margins */
 }
 
 .page-content {
-    justify-content: center;
-    justify-items: center;
+    align-items: center;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
     flex-flow: wrap;
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+    flex-direction: column;
+}
+
+.page-content-title {
+    margin-top: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.page-content-subtitle-medium {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 0;
+    font-weight: 100;
+}
+
+.page-content-subtitle {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+    color: darkgray;
+}
+
+.page-content-big-button {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #02bb8c;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    height: 50px;
+    border-radius: 25px;
+    width: 250px;
+    color: white;
 }
 
 .sponsors-list {
@@ -428,7 +472,7 @@ body { margin:0; padding: 0; } /* Remove body margins */
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
 }
 
 .career-quiz .title {
@@ -599,27 +643,20 @@ body { margin:0; padding: 0; } /* Remove body margins */
     margin: 10px;
 }
 
-.hint-courses-title {
-    margin-top: 50px;
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 40px;
-}
-
 .hint-courses {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    flex-flow: wrap;
 }
 
 .hint-courses-card {
-    width: 30%;
+    width: 250px;
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
     border-color: darkgray;
-    margin: 10px;
+    margin: 5px;
 }
 
 .hint-courses-card .image {
@@ -700,4 +737,209 @@ body { margin:0; padding: 0; } /* Remove body margins */
     margin-left: 5%;
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+.hint-courses-categories {
+    overflow: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.hint-courses-categories .category {
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-table;
+}
+
+.learning-path {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.learning-path .card {
+    margin: 10px;
+    width: 250px;
+    height: 200px;
+    position: relative;
+}
+
+.learning-path .card .back-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.learning-path .card .front-content {
+    top: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+
+.learning-path .card .front-content .small-text {
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    font-weight: 200;
+}
+
+.learning-path .card .front-content .big-text {
+    font-family: sans-serif;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+}
+
+.support-list {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.support-list .card {
+    margin: 20px;
+    padding-top: 5px;
+    width: 450px;
+    display: flex;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: darkgray;
+    flex-direction: column;
+    align-items: center;
+    border-width: 1px;
+}
+
+.support-list .card .image {
+    width: 98%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.support-list .card .title {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.support-list .card .content {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.support-list .card .button {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background-color: #02bb8c;
+    border-radius: 25px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.feedback-list {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.feedback-list .card {
+    display: flex;
+    width: 300px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: darkgray;
+    flex-direction: column;
+    border-width: 1px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.feedback-list .card .star-row {
+    display: flex;
+}
+
+.feedback-list .card .star-row .star-img {
+    height: 20px;
+    margin: 2px;
+}
+
+.feedback-list .card .feedback-content {
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.feedback-list .card .separator {
+    height: 1px;
+    background-color: gainsboro;
+}
+
+.feedback-list .card .feedback-writer-info {
+    display: flex;
+    padding-top: 10px;
+}
+
+.feedback-list .card .feedback-writer-info .left {
+    display: flex;
+    width: 20%;
+}
+
+.feedback-list .card .feedback-writer-info .left .avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.feedback-list .card .feedback-writer-info .right {
+    margin-left: 10px;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feedback-list .card .feedback-writer-info .right .commentor-name {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.feedback-list .card .feedback-writer-info .right .commentor-location {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    margin-top: 3px;
+    margin-bottom: 0;
+    overflow: hidden;
 }
