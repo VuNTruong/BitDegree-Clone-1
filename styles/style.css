@@ -58,6 +58,14 @@ h2 {
   padding-bottom: 10px;
 }
 
+.page-content-text {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0;
+  color: darkgray;
+}
+
 .promo {
   width: 100%;
   background: url("../banner/banner.png");
@@ -109,6 +117,12 @@ h2 {
   font-weight: 400;
 }
 
+.category-filter-icon {
+  height: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .header-option {
   font-size: 15px;
   color: white;
@@ -125,12 +139,6 @@ h2 {
   border-radius: 20px;
   background-color: #ff0060;
   cursor: pointer;
-}
-
-.category-filter-icon {
-  height: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .search-area {
@@ -166,7 +174,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-items: center;
-  /* padding-left: 10px; */
   padding-right: 10px;
   background-color: transparent;
   cursor: pointer;
@@ -177,7 +184,7 @@ h2 {
   margin: 20px;
 }
 
-.main-content {
+.promo-content {
   margin-top: 120px;
   display: flex;
   flex-direction: column;
@@ -189,18 +196,12 @@ h2 {
   z-index: 1;
 }
 
-.main-content-text {
+.page-content-text--promo-text {
   font-weight: 400;
   color: #fff;
 }
 
-.main-content-small-text {
-  font-weight: 200;
-  color: white;
-  margin: 5px;
-}
-
-.main-content-course-category {
+.promo-content__course-category {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -210,7 +211,13 @@ h2 {
   justify-content: space-between;
 }
 
-.main-content-course-category-item {
+.promo-content__course-category__popular-categories {
+  display: flex;
+  flex-flow: wrap;
+  list-style: none;
+}
+
+.promo-content__course-category__popular-categories__item {
   white-space: nowrap;
   display: inline;
   cursor: pointer;
@@ -221,12 +228,6 @@ h2 {
   border-width: 1px;
   margin: 5px;
   padding: 10px;
-}
-
-.popular-categories {
-  display: flex;
-  flex-flow: wrap;
-  list-style: none;
 }
 
 .drop-down-menu {
@@ -405,14 +406,6 @@ h2 {
   margin-bottom: 30px;
   padding: 0;
   flex-direction: column;
-}
-
-.page-content-text {
-  text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 0;
-  color: darkgray;
 }
 
 .sponsors-list {
