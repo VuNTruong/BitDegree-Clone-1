@@ -197,6 +197,10 @@ h2 {
   z-index: 1;
 }
 
+.title-big--promo-content-text {
+  margin: 10px;
+}
+
 .page-content-text--promo-text {
   font-weight: 400;
   color: #fff;
@@ -429,12 +433,16 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
 }
 
 .title-big--career-quiz-title {
+  font-size: 40px;
   font-weight: 400;
-  font-size: 30;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 100px;
+  text-align: center;
 }
 
 .career-quiz .text {
@@ -469,6 +477,13 @@ h2 {
   font-weight: 400;
   color: white;
   width: 50%;
+}
+
+.title-big--career-quiz-2 {
+  font-weight: 500;
+  text-align: center;
+  font-size: 40px;
+  margin: 20px;
 }
 
 .footer {
@@ -768,14 +783,15 @@ h2 {
 
 .feedback-list__card {
   display: flex;
-  width: 300px;
+  width: 250px;
   border-style: solid;
   border-radius: 5px;
   border-color: darkgray;
   flex-direction: column;
   border-width: 1px;
   padding: 20px;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .feedback-list__card__star-row {
@@ -792,7 +808,7 @@ h2 {
 }
 
 .feedback-list__card__separator {
-  height: 1px;
+  height: 2px;
   background-color: gainsboro;
 }
 
@@ -886,5 +902,11 @@ h2 {
 @media only screen and (max-width: 400px) {
   .page-content-button {
     width: 80%;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .feedback-list__card {
+    margin: 10px;
   }
 }
