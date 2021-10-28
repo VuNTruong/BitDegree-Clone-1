@@ -12,6 +12,7 @@ h1 {
 
 h2 {
   font-size: 25px;
+  text-align: center;
 }
 
 .title-big {
@@ -423,7 +424,7 @@ h2 {
 
 .career-quiz {
   display: flex;
-  padding: 50px;
+  /* padding: 50px; */
   background: url("../banner/homepage-banner.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -879,5 +880,11 @@ h2 {
   .hint-courses-categories {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page-content-button {
+    width: 80%;
   }
 }
