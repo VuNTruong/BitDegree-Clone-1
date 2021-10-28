@@ -834,19 +834,19 @@ h2 {
   overflow: hidden;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   #hamburger-menu-button {
     display: none;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   #search-icon {
     display: none;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .category-filter {
     display: none;
   }
@@ -870,12 +870,12 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 800px) {
   .footer__footer-links {
     grid-template-columns: auto auto;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .hint-courses-categories {
     display: flex;
     justify-content: center;
