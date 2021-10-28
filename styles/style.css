@@ -847,11 +847,11 @@ h2 {
 }
 
 @media only screen and (max-width: 768px) {
-  #category-filter {
+  .category-filter {
     display: none;
   }
 
-  #course-search-area {
+  .search-area {
     display: none;
   }
 
