@@ -410,7 +410,7 @@ h2 {
 }
 
 .sponsors-list {
-  margin: 20px;
+  /* margin: 20px; */
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -551,7 +551,7 @@ h2 {
 .footer-credit {
   margin-top: 50px;
   margin-bottom: 10px;
-  width: 80%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
