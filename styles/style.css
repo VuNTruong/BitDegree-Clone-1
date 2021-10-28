@@ -469,7 +469,7 @@ h2 {
   align-items: center;
 }
 
-.career-quiz-2 .title {
+.career-quiz-2__title {
   text-align: center;
   font-size: 40px;
   font-weight: 400;
@@ -486,41 +486,18 @@ h2 {
   flex-direction: column;
 }
 
-.footer-credit {
-  margin-top: 50px;
-  margin-bottom: 10px;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.footer__footer-links {
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
 }
 
-.footer-credit-image {
-  display: flex;
-  height: 30px;
-  justify-content: flex-start;
-}
-
-.footer-credit-copyright {
-  display: flex;
-  justify-content: flex-end;
-  color: white;
-  color: darkgray;
-}
-
-.footer-column {
-  width: 80%;
-  display: flex;
-  flex-flow: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.footer-column-item {
+.footer__footer-links__footer-links-column-item {
   margin: 5px;
 }
 
-.footer-column-list {
+.footer__footer-links__footer-links-column-item__list {
   list-style-type: none;
   padding: 0;
   color: #a1a7b3;
@@ -528,14 +505,17 @@ h2 {
   font-weight: 90;
 }
 
-.footer-column-list .text {
+.page-content-text--footer-links-text {
+  text-align: left;
   margin-bottom: 10px;
+  margin-left: 0;
 }
 
-.footer-column-category {
-  color: #a1a7b3;
-  font-size: 15px;
-  font-weight: 400;
+.page-content-text--footer-links-category-text {
+  text-align: left;
+  margin-left: 0;
+  margin-top: 20px;
+  font-weight: 600;
 }
 
 .footer-language-chooser {
@@ -555,21 +535,45 @@ h2 {
 .follow-us {
   display: flex;
   flex-direction: row;
+  flex-flow: wrap;
 }
 
-.follow-us .icon {
+.follow-us__icon {
   height: 25px;
   margin: 5px;
 }
 
 .follow-us-logo {
+  flex-flow: wrap;
   margin-top: 20px;
   display: flex;
 }
 
-.follow-us-logo-item {
+.follow-us-logo__item {
   height: 35px;
   margin: 10px;
+}
+
+.footer-credit {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-credit__image {
+  display: flex;
+  height: 30px;
+  justify-content: flex-start;
+}
+
+.footer-credit__copyright {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  color: darkgray;
 }
 
 .hint-courses {
@@ -661,8 +665,7 @@ h2 {
 }
 
 .hint-courses-categories {
-  overflow: scroll;
-  overflow-y: hidden;
+  overflow-y: auto;
   white-space: nowrap;
   margin-bottom: 10px;
   width: 100%;
@@ -838,13 +841,6 @@ h2 {
   overflow: hidden;
 }
 
-.footer-links {
-  width: 90%;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  padding: 10px;
-}
-
 @media only screen and (min-width: 768px) {
   #hamburger-menu-button {
     display: none;
@@ -871,7 +867,7 @@ h2 {
   }
 
   .logo {
-    width: 200px;
+    width: 150px;
   }
 
   .promo {
@@ -882,7 +878,13 @@ h2 {
 }
 
 @media only screen and (max-width: 800px) {
-  .footer-links {
+  .footer__footer-links {
     grid-template-columns: auto auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .hint-courses-categories {
+    display: flex;
+    justify-content: center;
   }
 }
