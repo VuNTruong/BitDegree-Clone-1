@@ -428,11 +428,11 @@ h2 {
 
 .career-quiz {
   display: flex;
-  /* padding: 50px; */
   background: url("../banner/homepage-banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   flex-direction: column;
+  align-items: center;
   width: 90%;
 }
 
@@ -586,14 +586,14 @@ h2 {
 }
 
 .hint-courses {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto;
   width: 100%;
   justify-content: center;
   flex-flow: wrap;
 }
 
 .hint-courses-card {
-  width: 250px;
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;
@@ -908,5 +908,17 @@ h2 {
 @media only screen and (min-width: 400px) {
   .feedback-list__card {
     margin: 10px;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .hint-courses {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .hint-courses {
+    grid-template-columns: auto auto auto auto;
   }
 }
