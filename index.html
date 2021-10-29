@@ -4,16 +4,146 @@
     <title>Best Online Courses To Start Your Career</title>
     <link rel="stylesheet" href="styles/style.css" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script src="js/script.js"></script>
   </head>
   <body>
+    <!-- Begin dropdown menu -->
+    <div class="drop-down-menu" id="drop-down-menu">
+      <div class="drop-down-menu-item">
+        <div class="drop-down-menu-item-left">
+          <p class="drop-down-menu-text">Blockchain</p>
+        </div>
+
+        <div class="drop-down-menu-item-right">
+          <img
+            class="drop-down-menu-icon"
+            src="icon/rightArrow.png"
+            alt="icon"
+          />
+        </div>
+      </div>
+
+      <div class="drop-down-menu-item">
+        <div class="drop-down-menu-item-left">
+          <p class="drop-down-menu-text">Business</p>
+        </div>
+
+        <div class="drop-down-menu-item-right">
+          <img
+            class="drop-down-menu-icon"
+            src="icon/rightArrow.png"
+            alt="icon"
+          />
+        </div>
+      </div>
+
+      <div class="drop-down-menu-item">
+        <div class="drop-down-menu-item-left">
+          <p class="drop-down-menu-text">Coding and programming</p>
+        </div>
+
+        <div class="drop-down-menu-item-right">
+          <img
+            class="drop-down-menu-icon"
+            src="icon/rightArrow.png"
+            alt="icon"
+          />
+        </div>
+      </div>
+
+      <div class="drop-down-menu-item">
+        <div class="drop-down-menu-item-left">
+          <p class="drop-down-menu-text">Data Science</p>
+        </div>
+
+        <div class="drop-down-menu-item-right">
+          <img
+            class="drop-down-menu-icon"
+            src="icon/rightArrow.png"
+            alt="icon"
+          />
+        </div>
+      </div>
+
+      <div class="drop-down-menu-item">
+        <div class="drop-down-see-all-categories-button">
+          <p class="drop-down-see-all-categories-button-text">All categories</p>
+        </div>
+      </div>
+    </div>
+    <!-- End dropdown menu -->
+
+    <!-- Begin hamburger menu -->
+    <div class="hamburger-menu" id="hamburger-menu">
+      <div class="hamburger-menu-item">
+        <div class="hamburger-menu-item-left">
+          <img
+            class="hamburger-menu-logo"
+            src="logo/bitdegree-logo-black.svg"
+            alt="Hamburger menu logo"
+          />
+        </div>
+
+        <div class="hamburger-menu-item-right">
+          <img
+            class="hamburger-menu-icon"
+            src="icon/close.png"
+            alt="Hamburger menu close button"
+          />
+        </div>
+      </div>
+
+      <div class="hamburger-menu-item">
+        <div class="hamburger-menu-category-menu">
+          <div class="hamburger-menu-item-left">
+            <p class="text">Courses</p>
+          </div>
+
+          <div class="hamburger-menu-item-right">
+            <img
+              class="hamburger-menu-icon"
+              src="icon/rightArrow.png"
+              alt="Course categories button"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="hamburger-menu-item">
+        <div class="hamburger-menu-category-menu-search-bar">
+          <img
+            src="icon/searchIconGray.png"
+            class="header-option-button-icon"
+            alt="Search icon"
+          />
+          <textarea
+            class="search-area-text-area"
+            placeholder="Search courses"
+          ></textarea>
+        </div>
+      </div>
+
+      <p class="hamburger-menu-item hamburger-menu-item--button">
+        Become Instructor
+      </p>
+
+      <p class="hamburger-menu-item hamburger-menu-item--button">Login</p>
+
+      <p class="hamburger-menu-item hamburger-menu-item--button-red">
+        Sign up FREE
+      </p>
+    </div>
+    <!-- End hamburger menu -->
+
     <div class="promo">
       <div class="header">
         <div class="header__content-left">
           <img
-            class="icon"
+            class="hamburger-menu-button"
             id="hamburger-menu-button"
             src="icon/hamburgerMenuIcon.png"
             alt="Hamburger menu icon"
+            onclick="onClickOpenHamburgerMenu()"
           />
           <img
             src="logo/bitdegree-logo-white.svg"
@@ -22,7 +152,11 @@
             alt="Logo"
           />
 
-          <div class="category-filter" id="category-filter">
+          <div
+            class="category-filter"
+            id="category-filter"
+            onclick="onClickOpenDropdownMenu()"
+          >
             <p class="category-filter-text">Courses</p>
             <img src="icon/dropDown.png" class="icon" alt="Drowdown icon" />
           </div>
@@ -37,21 +171,19 @@
         </div>
 
         <div class="header__content-right">
-          <div class="header-option-button">
-            <img
-              id="shopping-icon"
-              class="icon"
-              src="icon/shoppingIconWhite.png"
-              alt="Shopping icon"
-            />
+          <img
+            id="shopping-button"
+            class="header-option-button"
+            src="icon/shoppingIconWhite.png"
+            alt="Shopping icon"
+          />
 
-            <img
-              id="search-icon"
-              class="icon"
-              src="icon/searchIconWhite.png"
-              alt="Search icon"
-            />
-          </div>
+          <img
+            id="search-button"
+            class="header-option-button"
+            src="icon/searchIconWhite.png"
+            alt="Search icon"
+          />
 
           <p class="header-option">Become instructor</p>
 
@@ -195,6 +327,22 @@
           </div>
 
           <div class="hint-courses-card__course-price">$9.99</div>
+
+          <div class="hint-courses-card__options">
+            <div class="hint-courses-card__options__detail">
+              <div class="hint-courses-card__options__detail__left">
+                <p class="hint-courses-text">Details</p>
+              </div>
+
+              <div class="hint-courses-card__options__detail__right">
+                <img
+                  class="hint-courses-icon"
+                  alt="Buy icon"
+                  src="icon/shoppingIconWhite.png"
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="hint-courses-card">
@@ -228,6 +376,22 @@
           </div>
 
           <div class="hint-courses-card__course-price">$19.99</div>
+
+          <div class="hint-courses-card__options">
+            <div class="hint-courses-card__options__detail">
+              <div class="hint-courses-card__options__detail__left">
+                <p class="hint-courses-text">Details</p>
+              </div>
+
+              <div class="hint-courses-card__options__detail__right">
+                <img
+                  class="hint-courses-icon"
+                  alt="Buy icon"
+                  src="icon/shoppingIconWhite.png"
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="hint-courses-card">
@@ -261,6 +425,22 @@
           </div>
 
           <div class="hint-courses-card__course-price">$9.99</div>
+
+          <div class="hint-courses-card__options">
+            <div class="hint-courses-card__options__detail">
+              <div class="hint-courses-card__options__detail__left">
+                <p class="hint-courses-text">Details</p>
+              </div>
+
+              <div class="hint-courses-card__options__detail__right">
+                <img
+                  class="hint-courses-icon"
+                  alt="Buy icon"
+                  src="icon/shoppingIconWhite.png"
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="hint-courses-card">
@@ -272,7 +452,7 @@
 
           <div class="hint-courses-card__description">
             <div class="hint-courses-card__description__left">
-              <p class="instructor-name">Chris Benjamin</p>
+              <p class="instructor-name">Fares Antoine Bouchedid</p>
             </div>
 
             <div class="hint-courses-card__description__right">
@@ -295,6 +475,22 @@
           </div>
 
           <div class="hint-courses-card__course-price">$9.99</div>
+
+          <div class="hint-courses-card__options">
+            <div class="hint-courses-card__options__detail">
+              <div class="hint-courses-card__options__detail__left">
+                <p class="hint-courses-text">Details</p>
+              </div>
+
+              <div class="hint-courses-card__options__detail__right">
+                <img
+                  class="hint-courses-icon"
+                  alt="Buy icon"
+                  src="icon/shoppingIconWhite.png"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -322,9 +518,20 @@
             <p class="learning-path__card__front-content__small-text">
               Become a
             </p>
+
             <p class="learning-path__card__front-content__big-text">
               Game Developer with Unity
             </p>
+
+            <div
+              class="learning-path__card_front-content__learning-path-button"
+            >
+              <p
+                class="learning-path__card_front-content__learning-path-button__text"
+              >
+                See Learning path
+              </p>
+            </div>
           </div>
         </div>
 
@@ -338,9 +545,20 @@
             <p class="learning-path__card__front-content__small-text">
               Become an
             </p>
+
             <p class="learning-path__card__front-content__big-text">
               iOS App Developer
             </p>
+
+            <div
+              class="learning-path__card_front-content__learning-path-button"
+            >
+              <p
+                class="learning-path__card_front-content__learning-path-button__text"
+              >
+                See Learning path
+              </p>
+            </div>
           </div>
         </div>
 
@@ -354,9 +572,20 @@
             <p class="learning-path__card__front-content__small-text">
               Become a
             </p>
+
             <p class="learning-path__card__front-content__big-text">
               Android App Developer
             </p>
+
+            <div
+              class="learning-path__card_front-content__learning-path-button"
+            >
+              <p
+                class="learning-path__card_front-content__learning-path-button__text"
+              >
+                See Learning path
+              </p>
+            </div>
           </div>
         </div>
 
@@ -370,9 +599,20 @@
             <p class="learning-path__card__front-content__small-text">
               Become a
             </p>
+
             <p class="learning-path__card__front-content__big-text">
               Game Designer
             </p>
+
+            <div
+              class="learning-path__card_front-content__learning-path-button"
+            >
+              <p
+                class="learning-path__card_front-content__learning-path-button__text"
+              >
+                See Learning path
+              </p>
+            </div>
           </div>
         </div>
 
@@ -386,9 +626,20 @@
             <p class="learning-path__card__front-content__small-text">
               Become a
             </p>
+
             <p class="learning-path__card__front-content__big-text">
               Web Developer
             </p>
+
+            <div
+              class="learning-path__card_front-content__learning-path-button"
+            >
+              <p
+                class="learning-path__card_front-content__learning-path-button__text"
+              >
+                See Learning path
+              </p>
+            </div>
           </div>
         </div>
 
@@ -402,9 +653,20 @@
             <p class="learning-path__card__front-content__small-text">
               Become a
             </p>
+
             <p class="learning-path__card__front-content__big-text">
               Online Business Master
             </p>
+
+            <div
+              class="learning-path__card_front-content__learning-path-button"
+            >
+              <p
+                class="learning-path__card_front-content__learning-path-button__text"
+              >
+                See Learning path
+              </p>
+            </div>
           </div>
         </div>
 
@@ -418,9 +680,20 @@
             <p class="learning-path__card__front-content__small-text">
               Become a
             </p>
+
             <p class="learning-path__card__front-content__big-text">
               Digital Marketing Guru
             </p>
+
+            <div
+              class="learning-path__card_front-content__learning-path-button"
+            >
+              <p
+                class="learning-path__card_front-content__learning-path-button__text"
+              >
+                See Learning path
+              </p>
+            </div>
           </div>
         </div>
       </div>

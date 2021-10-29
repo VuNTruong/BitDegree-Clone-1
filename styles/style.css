@@ -44,6 +44,11 @@ h2 {
   width: 250px;
   color: white;
   border-style: none;
+  cursor: pointer;
+}
+
+.page-content-button:hover {
+  background-color: #a07ae7;
 }
 
 .icon {
@@ -52,7 +57,7 @@ h2 {
 }
 
 .logo {
-  width: 15%;
+  width: 100px;
   margin-right: 20px;
   object-fit: contain;
   padding-top: 10px;
@@ -102,7 +107,7 @@ h2 {
   cursor: pointer;
   height: 40px;
   border-radius: 5px;
-  background-color: gray;
+  background-color: darkgrey;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,6 +115,11 @@ h2 {
   padding-right: 10px;
   margin: 10px;
   width: 15%;
+  height: 40px;
+}
+
+.category-filter:hover {
+  background-color: gray;
 }
 
 .category-filter-text {
@@ -142,6 +152,10 @@ h2 {
   cursor: pointer;
 }
 
+.header-option--red:hover {
+  background-color: #c70550;
+}
+
 .search-area {
   display: flex;
   align-items: center;
@@ -171,13 +185,20 @@ h2 {
 }
 
 .header-option-button {
-  height: 40px;
+  height: 20px;
+  margin: 5px;
   display: flex;
   align-items: center;
   justify-items: center;
   padding-right: 10px;
   background-color: transparent;
   cursor: pointer;
+}
+
+.hamburger-menu-button {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
 }
 
 .header-option-button-icon {
@@ -220,6 +241,7 @@ h2 {
   display: flex;
   flex-flow: wrap;
   list-style: none;
+  justify-content: center;
 }
 
 .promo-content__course-category__popular-categories__item {
@@ -235,9 +257,14 @@ h2 {
   padding: 10px;
 }
 
+.promo-content__course-category__popular-categories__item:hover {
+  background-color: #a1a7b3;
+}
+
 .drop-down-menu {
+  display: none;
   position: absolute;
-  left: 235px;
+  left: 150px;
   top: 60px;
   background-color: white;
   z-index: 10;
@@ -249,6 +276,10 @@ h2 {
   align-items: center;
   justify-content: space-between;
   margin: 0px;
+}
+
+.drop-down-menu-item:hover {
+  background-color: rgb(221, 221, 221);
 }
 
 .drop-down-menu-item-left {
@@ -296,6 +327,10 @@ h2 {
   justify-content: center;
 }
 
+.drop-down-see-all-categories-button:hover {
+  background-color: #1d8d71;
+}
+
 .drop-down-see-all-categories-button-text {
   font-size: 15px;
   font-weight: 600;
@@ -316,6 +351,7 @@ h2 {
   top: 0;
   left: 0;
   height: 100vh;
+  display: none;
 }
 
 .hamburger-menu-item {
@@ -375,7 +411,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 200px;
+  width: 100%;
   background-color: #eeeee4;
   border-radius: 5px;
 }
@@ -418,7 +454,7 @@ h2 {
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   flex-flow: wrap;
 }
 
@@ -593,18 +629,78 @@ h2 {
   flex-flow: wrap;
 }
 
+.hint-courses-icon {
+  height: 20px;
+}
+
+.hint-courses-text {
+  color: white;
+  font-weight: 600;
+}
+
 .hint-courses-card {
   border-style: solid;
   border-width: 1px;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   border-color: darkgray;
   margin: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hint-courses-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hint-courses-card:hover .hint-courses-card__options {
+  display: block;
 }
 
 .hint-courses-card__image {
   height: 150px;
   width: 100%;
   object-fit: cover;
+}
+
+.hint-courses-card__options {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  bottom: 0;
+  display: none;
+}
+
+.hint-courses-card__options__detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hint-courses-card__options__detail__left {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  background-color: #02bb8c;
+  cursor: pointer;
+}
+
+.hint-courses-card__options__detail__left:hover {
+  background-color: #a07ae7;
+}
+
+.hint-courses-card__options__detail__right {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #02bb8c;
+  cursor: pointer;
+}
+
+.hint-courses-card__options__detail__right:hover {
+  background-color: #a07ae7;
 }
 
 .hint-courses-card__description {
@@ -684,6 +780,13 @@ h2 {
   margin-left: 10px;
   margin-right: 10px;
   display: inline-table;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.hint-courses-categories__category:hover {
+  background-color: #cfd3db;
+  padding: 10px;
 }
 
 .learning-path {
@@ -698,6 +801,12 @@ h2 {
   width: 250px;
   height: 200px;
   position: relative;
+  cursor: pointer;
+}
+
+.learning-path__card:hover
+  .learning-path__card_front-content__learning-path-button {
+  display: block;
 }
 
 .learning-path__card__back-image {
@@ -737,6 +846,31 @@ h2 {
   text-align: center;
 }
 
+.learning-path__card_front-content__learning-path-button {
+  bottom: 0;
+  width: 100%;
+  background-color: #02bb8c;
+  justify-content: center;
+  display: none;
+  cursor: pointer;
+}
+
+.learning-path__card_front-content__learning-path-button:hover {
+  bottom: 0;
+  width: 100%;
+  background-color: #1d8d71;
+  justify-content: center;
+  display: none;
+}
+
+.learning-path__card_front-content__learning-path-button__text {
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+}
+
 .support-list {
   width: 100%;
   display: flex;
@@ -755,6 +889,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   border-width: 1px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .support-list__card__image {
@@ -863,6 +998,12 @@ h2 {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  #search-button {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .category-filter {
     display: none;
@@ -874,6 +1015,14 @@ h2 {
 
   .header-option {
     display: none;
+  }
+
+  #search-button {
+    display: block;
+  }
+
+  #shopping-button {
+    display: block;
   }
 
   .logo {
@@ -892,6 +1041,7 @@ h2 {
     grid-template-columns: auto auto;
   }
 }
+
 @media only screen and (min-width: 1000px) {
   .hint-courses-categories {
     display: flex;
@@ -914,11 +1064,23 @@ h2 {
 @media only screen and (min-width: 780px) {
   .hint-courses {
     grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media only screen and (min-width: 1000px) {
   .hint-courses {
     grid-template-columns: auto auto auto auto;
+    /* Equal width */
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+}
+
+/* This is used for menu */
+.show {
+  display: block;
+}
+
+.show-1 {
+  display: block;
 }
