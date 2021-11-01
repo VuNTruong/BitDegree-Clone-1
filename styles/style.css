@@ -1064,6 +1064,7 @@ h2 {
 @media only screen and (min-width: 780px) {
   .hint-courses {
     grid-template-columns: auto auto;
+    /* Equal width */
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -1073,6 +1074,27 @@ h2 {
     grid-template-columns: auto auto auto auto;
     /* Equal width */
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (min-width: 710px) {
+  .sponsors-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (min-width: 1068px) {
+  .sponsors-list {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .promo-content__course-category__popular-categories {
+    display: grid;
+    grid-template-columns: auto auto;
   }
 }
 

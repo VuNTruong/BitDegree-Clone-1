@@ -17,7 +17,8 @@ function onClickOpenHamburgerMenu() {
 
 // The function to handle event of when there is a change in layout
 function checkMediaQuery() {
-  // If the inner width of the window is less than 768px
+  // If the inner width of the window is less than 768px while the drop down menu
+  // is open, close it first
   if (window.innerWidth < 768) {
     // Get the dropdown menu element based on id
     var dropdownMenu = this.document.getElementById("drop-down-menu");
@@ -26,7 +27,8 @@ function checkMediaQuery() {
     dropdownMenu.classList.remove("show");
   }
 
-  // If the inner width of the window is greater than 768px
+  // If the inner width of the window is greater than 768px while the hamburger menu
+  // is open, close it first
   if (window.innerWidth > 768) {
     // Get the hamburger menu element based on id
     var hamburgerMenu = this.document.getElementById("hamburger-menu");
@@ -54,10 +56,18 @@ window.onclick = function (event) {
     // Close the dropdown menu by removing it out of the view
     dropdownMenu.classList.remove("show");
 
-    // Close the hamburger menu by removing it out of the view
-    hamburgerMenu.classList.remove("show-1");
+    // Remove the go right animation and start the go left animation
     hamburgerMenu.classList.remove("animate-right");
     hamburgerMenu.classList.add("animate-left");
+
+    // When the go left animation is ended (menu is closed), remove every animation class
+    // and hide the menu
+    hamburgerMenu.addEventListener("animationend", (event) => {
+      if (event.animationName === "go-left") {
+        hamburgerMenu.classList.remove("show-1");
+        hamburgerMenu.classList.remove("animate-left");
+      }
+    }, false);
   }
 };
 
