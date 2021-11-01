@@ -56,9 +56,12 @@ window.onclick = function (event) {
     // Close the dropdown menu by removing it out of the view
     dropdownMenu.classList.remove("show");
 
-    // Remove the go right animation and start the go left animation
-    hamburgerMenu.classList.remove("animate-right");
-    hamburgerMenu.classList.add("animate-left");
+    // Remove the go right animation and start the go left animation to close the hamburger menu
+    // only if the hamburger menu is being shown
+    if (hamburgerMenu.classList.contains("show-1")) {
+      hamburgerMenu.classList.remove("animate-right");
+      hamburgerMenu.classList.add("animate-left");
+    }
 
     // When the go left animation is ended (menu is closed), remove every animation class
     // and hide the menu
