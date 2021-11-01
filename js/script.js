@@ -34,7 +34,7 @@ function checkMediaQuery() {
   if (window.innerWidth > 768) {
     // Get the hamburger menu element based on id as well as its modal
     var hamburgerMenu = this.document.getElementById("hamburger-menu");
-    var hamburgerMenuModal = this.document.getElementById("menu-modal");
+    var hamburgerMenuModal = this.document.getElementById("hamburger-menu-modal");
 
     // Close the menu by removing it away from the view
     hamburgerMenu.classList.remove("show-1");

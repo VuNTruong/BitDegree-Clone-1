@@ -15,10 +15,35 @@ h2 {
   text-align: center;
 }
 
+/* Custom scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkgray; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: gray; 
+}
+/* End custom scroll bar */
+
 .page_main {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  display: grid;
+  margin: 0px 2rem;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
 }
 
 .title-big {
@@ -188,9 +213,11 @@ h2 {
   color: white;
   margin-left: 10px;
   width: 100%;
+  font-family: sans-serif;
 }
 
 .search-area-text-area--hamburger-menu {
+  font-family: sans-serif;
   color: black;
 }
 
@@ -209,6 +236,7 @@ h2 {
   height: 20px;
   width: 20px;
   margin-right: 10px;
+
 }
 
 .header-option-button-icon {
@@ -420,6 +448,7 @@ h2 {
 }
 
 .hamburger-menu-icon {
+  cursor: pointer;
   height: 20px;
 }
 
@@ -465,6 +494,11 @@ h2 {
   margin-bottom: 30px;
   padding: 0;
   flex-direction: column;
+
+  /* This is important when working with grid layout
+  this will make sure that overflow items won't stretch
+  the entire thing */
+  overflow: auto;
 }
 
 .sponsors-list {
@@ -665,6 +699,7 @@ h2 {
   margin: 5px;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .hint-courses-card:hover {
@@ -788,23 +823,29 @@ h2 {
 }
 
 .hint-courses-categories {
+  display: flex;
+  width: 100%;
+  overflow: scroll;
   overflow-y: auto;
   white-space: nowrap;
   margin-bottom: 10px;
-  width: 100%;
+  /* width: 100%; */
+  /* max-width: 100%; */
+  /* min-height: 100%; */
+  /* min-width: 100%; */
+  /* max-width: 100%; */
 }
 
 .hint-courses-categories__category {
   margin-left: 10px;
   margin-right: 10px;
-  display: inline-table;
-  padding: 10px;
+  /* display: inline; */
   cursor: pointer;
+  padding: 10px;
 }
 
 .hint-courses-categories__category:hover {
   background-color: #cfd3db;
-  padding: 10px;
 }
 
 .learning-path {
