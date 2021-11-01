@@ -6,6 +6,11 @@ function onClickOpenDropdownMenu() {
 
 // The function to open hamburger menu when user clicks it
 function onClickOpenHamburgerMenu() {
+  // Get the hamburger menu element based on id
+  var hamburgerMenu = this.document.getElementById("hamburger-menu");
+
+  hamburgerMenu.classList.add("animate-right");
+
   // Toggle the menu
   document.getElementById("hamburger-menu").classList.toggle("show-1");
 }
@@ -51,6 +56,8 @@ window.onclick = function (event) {
 
     // Close the hamburger menu by removing it out of the view
     hamburgerMenu.classList.remove("show-1");
+    hamburgerMenu.classList.remove("animate-right");
+    hamburgerMenu.classList.add("animate-left");
   }
 };
 

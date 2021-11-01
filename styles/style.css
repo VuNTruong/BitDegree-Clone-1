@@ -15,6 +15,12 @@ h2 {
   text-align: center;
 }
 
+.page_main {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .title-big {
   font-weight: 600;
   font-size: 45px;
@@ -349,8 +355,9 @@ h2 {
   background-color: white;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -80%;
   height: 100vh;
+  width: 80%;
   display: none;
 }
 
@@ -438,9 +445,6 @@ h2 {
 
 .page-content {
   align-items: center;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
   flex-flow: wrap;
   display: flex;
   margin-top: 30px;
@@ -1025,10 +1029,6 @@ h2 {
     display: block;
   }
 
-  .logo {
-    width: 150px;
-  }
-
   .promo {
     background: url("../banner/banner-mobile.png");
     background-repeat: no-repeat;
@@ -1083,4 +1083,35 @@ h2 {
 
 .show-1 {
   display: block;
+}
+
+/* The animation code */
+@keyframes go-right {
+  from {
+    left: -80%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes go-left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -80%;
+  }
+}
+
+.animate-right {
+  animation-name: go-right;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.animate-left {
+  animation-name: go-left;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
