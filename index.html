@@ -8,6 +8,8 @@
   </head>
   <body>
     <!-- Begin dropdown menu -->
+    <div class="menu-modal" id="drop-down-menu-modal" onclick="closeMenu()"></div>
+
     <div class="drop-down-menu" id="drop-down-menu">
       <div class="drop-down-menu-item">
         <div class="drop-down-menu-item-left">
@@ -74,6 +76,8 @@
     <!-- End dropdown menu -->
 
     <!-- Begin hamburger menu -->
+    <div class="menu-modal" id="hamburger-menu-modal" onclick="closeMenu()"></div>
+    
     <div class="hamburger-menu" id="hamburger-menu">
       <div class="hamburger-menu-item">
         <div class="hamburger-menu-item-left">
@@ -110,15 +114,17 @@
       </div>
 
       <div class="hamburger-menu-item">
-        <div class="hamburger-menu-category-menu-search-bar">
+        <div id="hamburger-menu-search-area" class="hamburger-menu-course-search-bar">
           <img
+            id="hamburger-menu-search-area-icon"
             src="icon/searchIconGray.png"
             class="header-option-button-icon"
             alt="Search icon"
           />
           <textarea
-            class="search-area-text-area"
-            placeholder="Search courses"
+            id="hamburger-menu-search-area-textarea"
+            class="search-area-text-area search-area-text-area--hamburger-menu"
+            placeholder="Search for courses"
           ></textarea>
         </div>
       </div>
