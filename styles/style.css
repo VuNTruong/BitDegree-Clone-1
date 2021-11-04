@@ -984,8 +984,8 @@ h2 {
   flex-direction: column;
   border-width: 1px;
   padding: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .feedback-list__card__star-row {
