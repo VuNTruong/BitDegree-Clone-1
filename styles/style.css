@@ -26,16 +26,16 @@ h2 {
 ::-webkit-scrollbar-track {
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: darkgray; 
+  background: darkgray;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: gray; 
+  background: gray;
 }
 /* End custom scroll bar */
 
@@ -236,7 +236,6 @@ h2 {
   height: 20px;
   width: 20px;
   margin-right: 10px;
-
 }
 
 .header-option-button-icon {
@@ -508,6 +507,30 @@ h2 {
   flex-direction: row;
   justify-content: center;
   flex-flow: wrap;
+}
+
+.sponsors-list :nth-child(1) {
+  order: 1;
+}
+
+.sponsors-list :nth-child(2) {
+  order: 2;
+}
+
+.sponsors-list :nth-child(3) {
+  order: 3;
+}
+
+.sponsors-list :nth-child(4) {
+  order: 6;
+}
+
+.sponsors-list :nth-child(5) {
+  order: 5;
+}
+
+.sponsors-list :nth-child(6) {
+  order: 4;
 }
 
 .sponsors-list__item {
@@ -977,6 +1000,7 @@ h2 {
 
 .feedback-list__card {
   display: flex;
+  margin-left: 1rem;
   width: 250px;
   border-style: solid;
   border-radius: 5px;
@@ -1007,7 +1031,8 @@ h2 {
 }
 
 .feedback-list__card__feedback-writer-info {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
   padding-top: 10px;
 }
 
@@ -1025,7 +1050,7 @@ h2 {
 .feedback-list__card__feedback-writer-info__right {
   margin-left: 10px;
   display: flex;
-  width: 80%;
+  width: 70%;
   flex-direction: column;
   justify-content: center;
 }
@@ -1035,12 +1060,13 @@ h2 {
   font-size: 15px;
   margin-top: 0;
   margin-bottom: 0;
+  text-align: left;
 }
 
 .feedback-list__card__feedback-writer-info__right__commentor-location {
   font-weight: 100;
   font-size: 13px;
-  margin-top: 3px;
+  margin-top: 0px;
   margin-bottom: 0;
   overflow: hidden;
 }
@@ -1108,11 +1134,9 @@ h2 {
   .page-content-button {
     width: 80%;
   }
-}
 
-@media only screen and (min-width: 400px) {
-  .feedback-list__card {
-    margin: 10px;
+  .feedback-list {
+    width: 100%;
   }
 }
 
@@ -1135,8 +1159,12 @@ h2 {
 @media only screen and (min-width: 710px) {
   .sponsors-list {
     display: grid;
-    grid-template-columns: auto auto auto;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  #observer-logo {
+    /* Row 2, Column 3 */
+    grid-area: 1 / 1;
   }
 }
 
